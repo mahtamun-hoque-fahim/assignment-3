@@ -14,6 +14,7 @@ tailwind.config = {
                 'c-primary': '#ABEF5F',
                 'c-primary-50': '#ABEF5F50',
                 'c-secondary': '#1c1c1c',
+                'c-bg-f4': '#f4f4f4',
             },
         },
     },
