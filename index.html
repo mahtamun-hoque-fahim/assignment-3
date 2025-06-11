@@ -4,49 +4,27 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- incase if I need css -->
-    <link rel="stylesheet" href="style.css">
+    <!-- daisyui and tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+
+    <!-- Tailwind config always after cdn, never before, does not works - for future reference -->
+    <script src="tailwind.config.js">
+    </script>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <!-- Custom color class defining -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'custom-blue': '#1E40AF',
-                        'custom-green': '#10B981',
-                    },
-                },
-            },
-            daisyui: {
-                themes: [
-                    {
-                        mytheme: {
-                            primary: '#1E40AF',
-                            secondary: '#10B981',
-                        },
-                    },
-                ],
-            },
-        };
-    </script>
-
-    <!-- Tailwind & DaisyUI -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
-
-    <title>Custom Colors with DaisyUI</title>
+    <title>Test Tailwind Colors</title>
 </head>
 
 <body>
-    <button class="btn btn-primary">Primary Button</button>
-    <button class="btn bg-custom-blue text-white">Custom Blue Button</button>
-    <p class="text-custom-green">Custom Green Text</p>
+    <div class="bg-c-primary-50 text-pink p-4">Custom Blue Div</div>
+    <div class="text-">Custom Green Text</div>
+    <button class="btn btn-custom-green text-white">Custom Button</button>
+
 </body>
 
 </html>
